@@ -1,0 +1,123 @@
+/* Global reset and basic setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('AI_Lung_Cancer_AdobeStock.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    margin: 23px; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    width: 100vw;
+    height: 100vh; /* Set height to fill the viewport */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Optional: Set a font */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.age-gender {
+    display: flex;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Adjust margin between rows */
+}
+
+.form-row label {
+    width: 45%; /* Adjust label width as needed */
+    text-align: left;
+}
+
+.form-row input {
+    width: 50%; /* Adjust input width as needed */
+}
+
+.container {
+    max-height: 100vh; /* Ensure the container fits within the viewport height */
+    margin: 23px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+/* * Scroll bar styling  */
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: rgb(129, 128, 128); 
+    
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; 
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.container label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+}
+
+.container input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-91 {
+  color: #fff;
+  padding: 15px 25px;
+  background-color: #151515;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 80%;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.button-91:hover {
+    background-color: grey; 
+}
+.container h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #333;
+}
